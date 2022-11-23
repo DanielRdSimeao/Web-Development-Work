@@ -98,7 +98,7 @@
 }
 
 .gallery-controls-previous::before {
-    border: solid #000;
+    border: solid var(--text-color);
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -123,7 +123,7 @@
 }
 
 .gallery-controls-next::before {
-    border: solid #000;
+    border: solid var(--text-color);
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
