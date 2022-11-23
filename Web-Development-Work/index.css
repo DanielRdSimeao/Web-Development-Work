@@ -1,0 +1,268 @@
+:root {
+    --background-color: #FFF;
+    --text-color: #1A1A1A;
+    --button-background-color: #9B8AFB;
+}
+
+body {
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    /*transition: background 0.5s linear, color 0.5s linear;*/
+}
+
+input {
+    visibility: hidden;
+}
+
+.containerCor {
+    position: fixed;
+    top: 10px;
+    right: 35px;
+}
+
+.label {
+    /*background-color: var(--text-color);*/
+    background-color: #111;
+    border-radius: 40%;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.3);
+    /*transition: background 0.5s linear;*/
+}
+/*
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.theme:checked + .label .ball {
+    transform: translate(24px);
+}
+*/
+.fa-moon {
+    color: #f1c40f;
+}
+.fa-sun {
+    color: #f39c12;
+}
+
+
+button {
+    margin: 2rem 0;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: var(--button-background-color);
+    color: var(--text-color);
+    
+    border: none;
+    border-radius: 1rem;
+}
+
+nav {
+    background: var(--text-color);
+    margin: 2%;
+    overflow: auto; /* hack */
+    border-radius: 100px;
+}
+
+ul {
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 2px;
+}
+
+a {
+    color: var(--background-color);
+    text-decoration: none;
+    /*transition: background 0.5s linear, color 0.5s linear;*/
+}
+nav a:hover {
+    color: red;
+}
+.RL, .STS, .PMP, .ED, .DST, .LB {
+    color: var(--text-color);
+}
+.github, .linkedin, .discord{
+    color: var(--text-color);
+}
+.github:hover, .linkedin:hover, .discord:hover {
+    color:red;
+}
+
+.tabela img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #b30600;
+}
+
+.nomeDaniel,.nomeGeovana {
+    text-align: center;
+}
+
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    margin: 16px;
+    text-align: center;
+}
+footer p {
+    margin-top: 2px;
+}
+
+.tabela {
+    margin: auto;
+    width: 66%;
+}
+
+.container {
+    margin: auto;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: var(--background-color);
+
+    padding: 30px;
+    width: 1100px; /* LARGURA */
+    height: auto; /* ALTURA */
+}
+
+.rocket {
+    margin: auto;
+    width: 20%;
+    display: block;
+}
+.satisfactory,.phasmophobia,.elitedangerous,.dontstarvetogether,.legobatman {
+    margin: auto;
+    width: 30%;
+    display: block;
+}
+
+.tabela-pagina-1 {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.Desc-Rocket,.Desc-Satis,.Desc-Phasmo,.Desc-ED,.Desc-DST {
+    font-size: large;
+}
+
+
+.topicos {
+    color:white;
+    text-align: center;
+    background-color: blue;
+}
+
+.bom,.adolescentes,.I5,.Bugs-aceitaveis,.gratis,.desafiador,.min20,.historia,.casual,.espera-promo,.ate-enjoar,.perfeito,.maniaco,.preco,.voce-escolhe,.tem-historia,.arte,.dezoito,.TI,.prat-n-tem,.notebook,.dark-souls,.historia-ate-q-boa,.divino,.cria,.energia,.tao-perfeito,.skin,.cabeca,.skyrim,.livro {
+    background-color: green;
+}
+
+.Inicial {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 50px;
+}
+.Inicial2 {
+    /*text-align: center;
+    justify-content: center;*/
+    color: var(--text-color);
+    padding: 0px 50px;
+}
+
+
+.TransIMG {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#slider {
+    width: 80%;
+    max-width: 500px;
+    height: 25vw;
+    max-height: 150px;
+
+    position: relative;
+    border-radius: auto;
+    border: 1px solid #ffffff;
+}
+
+#slider img{
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+    margin:auto;
+}
+
+.CliqueAq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-RocketLeague {
+    background-image: url('img/Jogos1/Rocket-League.jpeg');
+}
+.body-Satisfactory {
+    background-image: url('img/Jogos1/Satisfactory.jpeg');
+}
+.body-Phasmophobia {
+   background-image: url('img/Jogos1/Phasmophobia.jpg');
+}
+.body-EliteDangerous {
+    background-image: url('img/Jogos1/Elite-Dangerous.jpg');
+}
+.body-DontStarveTogether {
+    background-image: url('img/Jogos1/Dont-Starve-Together.jpeg');
+}
+.body-Batman {
+    background-image: url('img/Jogos1/Lego-Batman.jpg');
+}
